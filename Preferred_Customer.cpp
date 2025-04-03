@@ -130,62 +130,88 @@ int main()
      else
         cout << "\n Invalid option. Try Again.\n";
         continue;
+    
+
+    cout << "\n Purchase Successful. \n";
+    cout << "\n Total Spent : " << amount << endl;
+
+    // Tracking users amount then updating discount
+    if (amount >= 2000.00)
+    {
+        choiceptr = new PreferredCustomer4();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    else if (amount >= 1500.00)
+    {
+        choiceptr = new PreferredCustomer3();
 
     }
+    else if(amount >= 1000.00)
+    {
+        choiceptr = new PreferredCustomer2();
+    }
+    else if(amount >= 500.00)
+    {
+        choiceptr = new PreferredCustomer1();
+    }
+    if (choiceptr != nullptr)
+    {
+        choiceptr ->setAmount(amount);
+        choiceptr->congratulations();
+        cout << "\nDiscounted Total: $" << choiceptr->totalamount() << endl;
 
-
+        choiceptr = nullptr;
+    }
+}
+return 0;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
