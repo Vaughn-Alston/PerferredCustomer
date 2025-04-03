@@ -104,5 +104,88 @@ int main()
     "0..... Close Program\n\n";
     cout << "Select Choice to purchase: ";
     cin >> choice;
+
+    // Updating amount catalog user interactive catalog
+     if (choice ==0)
+     {
+        cout << "\nThank You. Ending Program.\n " << endl;
+        break;
+     }
+     else if(choice == 1)
+     {
+        amount += 50.25;
+     }
+     else if(choice == 2)
+     {
+        amount += 100.69;
+     }
+     else if(choice ==3)
+     {
+        amount +=200.82;
+     }
+     else if (choice == 4)
+     {
+        amount += 400.20;
+     }
+     else
+        cout << "\n Invalid option. Try Again.\n";
+        continue;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
 }
