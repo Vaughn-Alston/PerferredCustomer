@@ -11,3 +11,16 @@
 
 #include<iostream>
 using namespace std;
+
+class Customerdata // Main class
+{
+    protected:
+
+            double total;
+
+            public:
+                    virtual void congratulations() = 0; // will update the user when they meet a %
+                    virtual void totalamount() = 0;// this will be overriden with setpercent * total
+            void setAmount(double amount) {total = amount;}
+
+}; // End of first class
