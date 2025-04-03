@@ -20,7 +20,24 @@ class Customerdata // Main class
 
             public:
                     virtual void congratulations() = 0; // will update the user when they meet a %
-                    virtual void totalamount() = 0;// this will be overriden with setpercent * total
+                    virtual double totalamount() = 0;// this will be overriden with setpercent * total
             void setAmount(double amount) {total = amount;}
 
 }; // End of first class
+
+//5% Discount=
+
+class PreferredCustomer1 : public Customerdata // PreferredCustomer inherits Custoemr data
+{
+    public:
+
+        void congratulations() override {
+            cout << "Congratulations! You've Unlocked a 5 discount on future purchases. \n";
+        }
+// apply the .5 discount
+
+    double totalamount() 
+    {
+        return total * 0.95;
+    }
+};
