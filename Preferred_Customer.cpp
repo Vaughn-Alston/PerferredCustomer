@@ -56,3 +56,35 @@ class PreferredCustomer2 : public Customerdata
             return total * 0.94;
         }
 }; // end f class for 6% discount
+
+class PreferredCustomer3 : public Customerdata 
+{
+    public:
+        void congratulations() override {
+            cout << "Congratulations! You've Unclocked a 7 discount on future purchases\n";
+            
+        }
+//apply the .7 discount
+
+        double totalamount()
+        {
+            return total * 0.93;
+        }
+}; // end f class for 7% discount
+
+//start of 10%
+class PreferredCustomer4 : public Customerdata 
+{
+    public:
+        void congratulations() override {
+            cout << "Congratulations! You've Unclocked a 7 discount on future purchases\n";
+            
+        }
+//apply the .10 discount
+
+        double totalamount()
+        {
+            return total * 0.90;
+        }
+}; // end f class for 10% discount
+
