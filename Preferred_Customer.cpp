@@ -77,7 +77,7 @@ class PreferredCustomer4 : public Customerdata
 {
     public:
         void congratulations() override {
-            cout << "Congratulations! You've Unclocked a 7 discount on future purchases\n";
+            cout << "Congratulations! You've Unclocked a 10 discount on future purchases\n";
             
         }
 //apply the .10 discount
