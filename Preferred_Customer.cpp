@@ -88,3 +88,21 @@ class PreferredCustomer4 : public Customerdata
         }
 }; // end f class for 10% discount
 
+int main()
+{
+    double amount = 0.0;
+    int choice; 
+    Customerdata* choiceptr = nullptr; // null pointer prevent
+
+    while(true) // this will loop the user in the code untill break
+    {
+    cout << "----Shirt Catalog---- \n" <<
+    "1.Nike Shirt ---- 50.25 \n" <<
+    "2.Supreme Shirt --- 100.69\n" <<
+    "3.Bape Shirt ---- 200.82\n" <<
+    "4.Vans Lited Edition --- 400.20\n"
+    "0..... Close Program\n\n";
+    cout << "Select Choice to purchase: ";
+    cin >> choice;
+    }
+}
