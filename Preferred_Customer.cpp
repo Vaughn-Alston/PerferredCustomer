@@ -41,3 +41,18 @@ class PreferredCustomer1 : public Customerdata // PreferredCustomer inherits Cus
         return total * 0.95;
     }
 };
+//6% discount
+class PreferredCustomer2 : public Customerdata 
+{
+    public:
+        void congratulations() override {
+            cout << "Congratulations! You've Unclocked a 6 discount on future purchases\n";
+            
+        }
+//apply the .6 discount
+
+        double totalamount()
+        {
+            return total * 0.94;
+        }
+}; // end f class for 6% discount
